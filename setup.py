@@ -3,12 +3,12 @@ import os
 import pkg_resources
 from pathlib import Path
 
-long_description = (Path(__file__).parent / "README.md").read_text()
+long_description = (Path(__file__).parent / "README.md").read_text(encoding="utf-8")
 DESCRIPTION = 'ImageReward'
 
 # 配置
 setup(
-        name="image-reward", 
+        name="image-reward",
         py_modules = ["ImageReward"],
         version="1.0",
         author="Jiazheng Xu, et al.",
